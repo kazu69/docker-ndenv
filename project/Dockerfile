@@ -35,5 +35,3 @@ ENV PATH $NDENV_ROOT/shims:$NDENV_ROOT/bin:$PATH
 ADD ./.node_versions /root/.node_versions
 ADD ./install.sh /root/install.sh
 RUN /bin/bash -c /root/install.sh /root/.node_versions
-
-#CMD ["/usr/bin/ndenv", "versions"]
